@@ -20,7 +20,7 @@ export default function HeroSection () {
                Affordable, high-quality websites built to help small businesses grow fasts.
             </div>
             <div className="ct-actions dfb align-center justify-center gap-10 mb-3">
-               <Link href="https://app.agencyminweb.com/onboarding">
+               <Link href="https://app.minwebagency.com/onboarding">
                   <button className="xxs pd-13 pdx-3">Start Now <ArrowRight size={17} /></button>
                </Link>
                <Link href="mailto:agencyminweb@gmail.com">
