@@ -1,0 +1,76 @@
+.reviews {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.reviews .reviews-list {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   padding: 10px;
+   flex-wrap: wrap;
+}
+
+.reviews .reviews-list .review {
+   width: 100%;
+   max-width: calc(400px - 20px);
+   background-color: white;
+   border: 1px solid #ededed;
+   border-radius: 10px;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.reviews .reviews-list .review .review-text {
+   line-height: 1.65rem;
+   flex-grow: 1;
+}
+
+.reviews .reviews-list .review .reviewer {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   height: 6vh;
+}
+
+.reviews .reviews-list .review .reviewer .image {
+   height: 100%;
+   padding: 6px;
+}
+
+.reviews .reviews-list .review .reviewer .image img {
+   height: 100%;
+   aspect-ratio: 1;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 100%;
+}
+
+.reviews .reviews-list .review .reviewer .info {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.reviews .reviews-list .review .reviewer .info > div {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.reviews .reviews-list .review .reviewer .info .website { font-size: 0.95rem; }
+
+.reviews .reviews-list .review .reviewer .info > div a {
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   text-decoration: none;
+   color: #0055ff;
+}
