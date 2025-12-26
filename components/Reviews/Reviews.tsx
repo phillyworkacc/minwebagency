@@ -15,7 +15,7 @@ export default function Reviews() {
 		{
 			author: 'Asfand Khan',
 			authorImage: 'https://minwebappcmgr.vercel.app/clientdefault.jpg',
-			authorWebsite: 'https://ayeikperfumes.com',
+			authorWebsite: '',
 			review: "Really great working with him. Soo helpful and put soo much time and effort into my work. He's soo patient and spent his personal time to help me finish off the website and set it up for my drop next day. He's very professional and definitely worth his prices. I'm looking forward to working with him in future again for my 2 new businesses that I'm working on. Overall perfect guy who puts in the time and effort on the job."
 		},{
 			author: 'Glendean Rehvan',

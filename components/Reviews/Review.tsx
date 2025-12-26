@@ -21,11 +21,11 @@ export default function Review({ review }: { review: Review }) {
             </div>
             <div className="info">
                <div className="name">{review.author}</div>
-               <div className="website">
+               {(review.authorWebsite !== "") && (<div className="website">
                   <Link href={review.authorWebsite} target="_blank">
                      <Link2 size={18} /> Visit Website
                   </Link>
-               </div>
+               </div>)}
             </div>
          </div>
       </div>
