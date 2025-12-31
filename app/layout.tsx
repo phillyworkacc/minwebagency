@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script defer data-web-identifier="ayom" data-party="visora" data-website-id="863bcdbb-725c-4f4a-89ec-d109e8516d8c" src="https://visora.vercel.app/cdn/track.js"></script>
+        <script defer data-web-identifier="ayom" data-party="visora" data-website-id="bc394121-50b0-449e-adbe-7b217ce51409" src="https://visora.vercel.app/cdn/track.js"></script>
       </head>
       <body className={InterFont.className}>
         <Toaster richColors position="top-center" />
