@@ -19,6 +19,9 @@ export default function HeroSection () {
             <div className="hero-sub-headline mb-2 text-center pdx-1">
                Affordable, high-quality websites built to help small businesses grow fasts.
             </div>
+            <div className="hero-sub-headline mb-2 text-center pdx-1">
+               Not just a website but a system ready for propelling your business to the next level
+            </div>
             <div className="ct-actions dfb align-center justify-center gap-10 mb-3">
                <Link href="https://app.minwebagency.com/onboarding" target="_blank">
                   <button className="xxs pd-13 pdx-3">Start Now <ArrowRight size={17} /></button>

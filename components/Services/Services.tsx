@@ -2,7 +2,7 @@
 import "./Services.css"
 import Spacing from "../Spacing/Spacing";
 import { motion } from 'framer-motion';
-import { Bot, CreditCard, DollarSign, FileText, Globe, LineChart, Mail, ShieldCheck, ShoppingCart, Timer } from "lucide-react";
+import { Bot, CreditCard, DollarSign, FileText, Globe, LineChart, Mail, MessageSquareText, PhoneMissed, ShieldCheck, ShoppingCart, Stars, Timer } from "lucide-react";
 
 const features = [
    {
@@ -11,9 +11,24 @@ const features = [
       icon: Mail,
    },
    {
+      title: "Missed Call Text-Back",
+      description: "Automatically text back missed callers so no lead slips through the cracks.",
+      icon: PhoneMissed,
+   },
+   {
       title: "Payment Processing",
       description: "Secure, fast checkout setups for services or products.",
       icon: CreditCard,
+   },
+   {
+      title: "5-Star Google Reviews",
+      description: "Boost visibility and trust with consistently high Google ratings.",
+      icon: Stars,
+   },
+   {
+      title: "SMS Quote Requests",
+      description: "Get instant quote requests delivered straight to your phone.",
+      icon: MessageSquareText,
    },
    {
       title: "Shopify Development",

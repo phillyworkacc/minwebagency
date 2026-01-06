@@ -102,8 +102,8 @@ export default function Pricing () {
    return (
       <section className="pricing">
          <div className="page-container">
-            <div className="text-xl bold-700 full pd-2 text-center">Estimate Website Cost</div>
-            <div className="text-xs grey-5 pd-1 full mb-1 text-center">
+            <div className="text-xl bold-700 full pd-05 text-center">Estimate Website Custom Build Cost</div>
+            <div className="text-xs grey-5 pd-1 full mb-3 text-center">
                Get an estimate of how much a website at Minweb will cost for your website.
             </div>
             <div className="box full dfb align-center justify-center">

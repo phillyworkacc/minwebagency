@@ -79,7 +79,7 @@ export default function Footer() {
                   <div className="box fit pd-05">
                      <FooterLink
                         link="https://mypocketskill.com/listings/66222/"
-                        label="MyPocketSkill"
+                        label="Philip's Profile"
                         icon={<CustomIcon url="https://static.mypocketskill.com/static/favicon/icon-32.png" round size={17} />}
                      />
                   </div>
