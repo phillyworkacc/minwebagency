@@ -113,6 +113,11 @@ a {
 
 .box.dfb.wrap, [class*="text-"].dfb.wrap { flex-wrap: wrap; }
 
+.box.gap-5, [class*="text-"].gap-5 { gap: 5px; }
+.box.gap-6, [class*="text-"].gap-6 { gap: 6px; }
+.box.gap-7, [class*="text-"].gap-7 { gap: 7px; }
+.box.gap-8, [class*="text-"].gap-8 { gap: 8px; }
+.box.gap-9, [class*="text-"].gap-9 { gap: 9px; }
 .box.gap-10, [class*="text-"].gap-10 { gap: 10px; }
 .box.gap-15, [class*="text-"].gap-15 { gap: 15px; }
 .box.gap-20, [class*="text-"].gap-20 { gap: 20px; }
@@ -219,6 +224,19 @@ textarea.pdx-9, input.pdx-9, button.pdx-9 { padding-left: 90px; padding-right: 9
 [class*="text-"].grey-4 { color: #838383; }
 [class*="text-"].grey-5 { color: #464646; }
 
+[class*="text-"].color-white { color: #fff; }
+
+.htv.mw-200, .box.mw-200, [class*="text-"].mw-200 { max-width: 200px; }
+.htv.mw-300, .box.mw-300, [class*="text-"].mw-300 { max-width: 300px; }
+.htv.mw-400, .box.mw-400, [class*="text-"].mw-400 { max-width: 400px; }
+.htv.mw-500, .box.mw-500, [class*="text-"].mw-500 { max-width: 500px; }
+.htv.mw-600, .box.mw-600, [class*="text-"].mw-600 { max-width: 600px; }
+.htv.mw-700, .box.mw-700, [class*="text-"].mw-700 { max-width: 700px; }
+.htv.mw-800, .box.mw-800, [class*="text-"].mw-800 { max-width: 800px; }
+.htv.mw-900, .box.mw-900, [class*="text-"].mw-900 { max-width: 900px; }
+.htv.mw-1000, .box.mw-1000, [class*="text-"].mw-1000 { max-width: 1000px; }
+.htv.mw-1200, .box.mw-1200, [class*="text-"].mw-1200 { max-width: 1200px; }
+
 .box.cursor-pointer, [class*="text-"].cursor-pointer { cursor: pointer; }
 
 .box.visible-link, [class*="text-"].visible-link { cursor: pointer; }
@@ -229,6 +247,15 @@ textarea.pdx-9, input.pdx-9, button.pdx-9 { padding-left: 90px; padding-right: 9
 .box.h-fit, [class*="text-"].h-fit { height: fit-content; }
 .box.h-full, [class*="text-"].h-full { height: 100%; }
 .box.full { width: 100%; }
+
+button.bg-black, .box.bg-black { background-color: black; }
+button.bg-grey-1, .box.bg-grey-1 { background-color: #eeeeee; }
+button.bg-grey-2, .box.bg-grey-2 { background-color: #d1d1d1; }
+button.bg-grey-3, .box.bg-grey-3 { background-color: #b4b4b4; }
+button.bg-grey-4, .box.bg-grey-4 { background-color: #838383; }
+button.bg-grey-5, .box.bg-grey-5 { background-color: #464646; }
+button.bg-white, .box.bg-white { background-color: white; }
+button.bg-accent-color, .box.bg-accent-color { background-color: var(--accent-color); }
 
 .list {
   display: flex;
@@ -337,6 +364,11 @@ button.outline-black {
   color: black;
   border: 1px solid #ebebeb;
 }
+button.outline-accent-color {
+  background: #ffffff;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
 button.transparent {
   background: transparent;
   color: black;
@@ -347,6 +379,24 @@ button.delete {
   background: #e42d2d;
   color: white;
 }
+
+.box.radius-5, button.radius-5, textarea.radius-5, input.radius-5 { border-radius: 5px; }
+.box.radius-6, button.radius-6, textarea.radius-6, input.radius-6 { border-radius: 6px; }
+.box.radius-7, button.radius-7, textarea.radius-7, input.radius-7 { border-radius: 7px; }
+.box.radius-8, button.radius-8, textarea.radius-8, input.radius-8 { border-radius: 8px; }
+.box.radius-9, button.radius-9, textarea.radius-9, input.radius-9 { border-radius: 9px; }
+.box.radius-10, button.radius-10, textarea.radius-10, input.radius-10 { border-radius: 10px; }
+.box.radius-12, button.radius-12, textarea.radius-12, input.radius-12 { border-radius: 12px; }
+.box.radius-14, button.radius-14, textarea.radius-14, input.radius-14 { border-radius: 14px; }
+.box.radius-15, button.radius-15, textarea.radius-15, input.radius-15 { border-radius: 15px; }
+.box.radius-16, button.radius-16, textarea.radius-16, input.radius-16 { border-radius: 16px; }
+.box.radius-18, button.radius-18, textarea.radius-18, input.radius-18 { border-radius: 18px; }
+.box.radius-20, button.radius-20, textarea.radius-20, input.radius-20 { border-radius: 20px; }
+.box.radius-25, button.radius-25, textarea.radius-25, input.radius-25 { border-radius: 25px; }
+.box.radius-30, button.radius-30, textarea.radius-30, input.radius-30 { border-radius: 30px; }
+.box.radius-35, button.radius-35, textarea.radius-35, input.radius-35 { border-radius: 35px; }
+.box.radius-40, button.radius-40, textarea.radius-40, input.radius-40 { border-radius: 40px; }
+.box.radius-100p, button.radius-100p, textarea.radius-100p, input.radius-100p { border-radius: 100%; }
 
 button.xxxs { font-size: 0.9rem; }
 button.xxs { font-size: 1rem; }
@@ -445,3 +495,4 @@ textarea.border-radius-25 { border-radius: 25px; }
 textarea.border-radius-30 { border-radius: 30px; }
 
 .no-trans { transition: none; }
+.no-select { user-select: none; }

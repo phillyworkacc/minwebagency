@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Spacing from "../Spacing/Spacing"
 import Review from "./Review"
 
-export default function Reviews() {
+export default function Reviews () {
 	const reviews = [
 		{
 			author: 'Anouska Longely',
