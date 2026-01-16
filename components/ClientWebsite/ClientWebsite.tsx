@@ -1,46 +1,37 @@
 "use client"
 import "./ClientWebsite.css"
-import { getWebsiteMetadata } from "@/app/actions/extras";
-import { SquareArrowOutUpRight } from "lucide-react";
-import { useState, useEffect } from "react";
 import { CustomUserIcon } from "../Icons/Icon";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import DefaultWebsiteIcon from "@/public/loading-site.png";
+import { motion } from "framer-motion";
 
 type ClientWebsiteProps = {
-   website: string;
+   website: {
+      name: string;
+      link: string;
+      logo: string;
+   };
+   index: number;
 }
 
-export default function ClientWebsite ({ website }: ClientWebsiteProps) {
-   const router = useRouter();
-   const [metadata, setMetadata] = useState({
-      websiteTitle: website, icon: DefaultWebsiteIcon.src
-   })
-
-   const loadMetadata = async () => {
-      const siteMetadata = await getWebsiteMetadata(`${website}`);
-      if (siteMetadata !== null) setMetadata(siteMetadata);
-   }
-
-   useEffect(() => {
-      const load = () => loadMetadata();
-      load();
-   }, [])
-
+export default function ClientWebsite ({ website, index }: ClientWebsiteProps) {
    const openPageInNewTab = () => {
-      window.open(website, "_blank");
+      window.open(website.link, "_blank");
    }
-
+   
    return (
-      <div className="client-website box cursor-pointer" onClick={openPageInNewTab}>
+      <motion.div 
+         className="client-website box cursor-pointer"
+         onClick={openPageInNewTab}
+         initial={{ y: 50, opacity: 0 }}
+         animate={{ y: 0, opacity: 1 }}
+         transition={{ duration: 0.2, ease: "easeIn", delay: index * 0.2 }}
+      >
          <div className="box full dfb align-center gap-10">
             <div className="box h-full fit">
-               <CustomUserIcon url={metadata.icon} size={40} round />
+               <CustomUserIcon url={website.logo} size={40} round />
             </div>
          </div>
-         <div className="text-s full bold-600 pd-1">{metadata.websiteTitle}</div>
-         <div className="text-t full visible-link">{website}</div>
-      </div>
+         <div className="text-s full bold-600 pd-1">{website.name}</div>
+         <div className="text-t full visible-link">{website.link}</div>
+      </motion.div>
    )
 }
