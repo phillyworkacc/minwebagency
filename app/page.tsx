@@ -7,7 +7,7 @@ import Services from "@/components/Services/Services";
 import Spacing from "@/components/Spacing/Spacing";
 import Analytics from "@/components/Analytics/Analytics";
 import BuildingStyle from "@/components/BuildingStyle/BuildingStyle";
-import Pricing from "@/components/Pricing/Pricing";
+import Pricing from "@/components/Pricing/CustomWebsitePricing";
 
 export default function Home() {
 	return (<>
@@ -18,8 +18,6 @@ export default function Home() {
 		<BuildingStyle />	
 		<Spacing size={3} />
 		<Reviews />
-		<Spacing size={3} />
-		<Pricing />
 		<Spacing size={6} />
 		<Footer />
 	</>);

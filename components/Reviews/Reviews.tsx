@@ -27,9 +27,11 @@ export default function Reviews () {
    
 	return (
       <div className="reviews">
-			<div className="text-xl bold-700 full pd-2 text-center">What our customers say</div>
-			<div className="text-xs grey-5 pd-1 full mb-1 text-center">
-				See what real clients say about working with us and how our work helped their business grow.
+			<div className="box full pdx-2">
+				<div className="text-xl bold-700 full pd-2 pdx-2 text-center">What our Customers Say</div>
+				<div className="text-xs grey-5 pd-1 full mb-1 text-center">
+					See what real clients say about working with us and how our work helped their business grow.
+				</div>
 			</div>
 			<div className="reviews-list">
 				{reviews.map((review, index) => (

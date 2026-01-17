@@ -62,6 +62,22 @@ export default function Footer() {
                </div>
 
                <div className="footer-link-section">
+                  <div className="text-s bold-600 full mb-1">Links</div>
+                  <div className="box fit pd-05">
+                     <FooterLink link='/' label={'Home'} icon={''} />
+                  </div>
+                  <div className="box fit pd-05">
+                     <FooterLink link='/our-work' label={'Our Work'} icon={''} />
+                  </div>
+                  <div className="box fit pd-05">
+                     <FooterLink link='/pricing' label={'Pricing'} icon={''} />
+                  </div>
+                  <div className="box fit pd-05">
+                     <FooterLink link='/reviews' label={'Testimonials'} icon={''} />
+                  </div>
+               </div>
+
+               <div className="footer-link-section">
                   <div className="text-s bold-600 full mb-1">Cooperations</div>
                   {cooperations.map((cooperation, index) => (
                      <div key={index} className="box fit pd-05">

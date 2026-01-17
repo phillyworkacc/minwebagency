@@ -1,34 +1,43 @@
 'use client'
 import "./Hero.css"
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { BricolageGrotesqueFont } from "@/app/fonts";
 import Link from "next/link";
+import HeroImage from "@/public/hero-image.jpg"
 
 export default function HeroSection () {
    const router = useRouter();
 
-   return (
-      <>
-         <div className="hero">
-            <div className={"hero-section-headline bold-800 mt-1 mb-1 text-center pd-15 pdx-3 " + BricolageGrotesqueFont.className}>
-               Build a Website That Means Business
+   return (<>
+      <div className="hero">
+         <div className="box mw-1200 pdx-2">
+
+            <div className="horizontal-convertible gap-30">
+               <div className="box full dfb column justify-center">
+                  <div className={"text-xb bold-800 pd-15 " + BricolageGrotesqueFont.className}>
+                     Website Design & Marketing Systems For Any Business
+                  </div>
+                  <div className="text-xs pd-1 mb-2 line-height-15">
+                     Not just a website but a system ready for propelling your business to the next level
+                  </div>
+                  <div className="box full dfb align-center gap-10 mb-3">
+                     <Link href="/">
+                        <button className="xxs pd-13 pdx-3">Book A Call <Phone size={17} /></button>
+                     </Link>
+                     {/* <Link href="https://app.minwebagency.com/onboarding" target="_blank">
+                        <button className="xxs pd-13 pdx-3 outline-black">Start Now <ArrowRight size={17} /></button>
+                     </Link> */}
+                  </div>
+               </div>
+               <div className="box full">
+                  <div className="hero-image">
+                     <img src={HeroImage.src} alt="hero-image" />
+                  </div>
+               </div>
             </div>
-            <div className="hero-sub-headline mb-2 text-center pdx-1">
-               Affordable, high-quality websites built to help small businesses grow fasts.
-            </div>
-            <div className="hero-sub-headline mb-2 text-center pdx-1">
-               Not just a website but a system ready for propelling your business to the next level
-            </div>
-            <div className="ct-actions dfb align-center justify-center gap-10">
-               <Link href="https://app.minwebagency.com/onboarding" target="_blank">
-                  <button className="xxs pd-13 pdx-3">Start Now <ArrowRight size={17} /></button>
-               </Link>
-               <Link href="mailto:agencyminweb@gmail.com">
-                  <button className="xxs pd-13 pdx-3 outline-black">Contact Us <Mail size={17} /></button>
-               </Link>
-            </div>
+
          </div>
-      </>
-   )
+      </div>
+   </>)
 }

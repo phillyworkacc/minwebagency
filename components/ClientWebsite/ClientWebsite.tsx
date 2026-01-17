@@ -7,6 +7,7 @@ type ClientWebsiteProps = {
    website: {
       name: string;
       link: string;
+      description: string;
       logo: string;
    };
    index: number;
@@ -30,8 +31,9 @@ export default function ClientWebsite ({ website, index }: ClientWebsiteProps) {
                <CustomUserIcon url={website.logo} size={40} round />
             </div>
          </div>
-         <div className="text-s full bold-600 pd-1">{website.name}</div>
-         <div className="text-t full visible-link">{website.link}</div>
+         <div className="text-sm full bold-600 pd-1">{website.name}</div>
+         <div className="text-xxs full grey-5 mb-1">{website.description}</div>
+         <div className="text-xxxs full grey-4 visible-link">{website.link}</div>
       </motion.div>
    )
 }
