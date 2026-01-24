@@ -22,7 +22,7 @@ export default function HeroSection () {
                      Not just a website but a system ready for propelling your business to the next level
                   </div>
                   <div className="box full dfb align-center gap-10 mb-3">
-                     <Link href="/">
+                     <Link href="/book-call">
                         <button className="xxs pd-13 pdx-3">Book A Call <Phone size={17} /></button>
                      </Link>
                      {/* <Link href="https://app.minwebagency.com/onboarding" target="_blank">

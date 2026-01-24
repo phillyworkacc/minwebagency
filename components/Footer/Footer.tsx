@@ -67,6 +67,9 @@ export default function Footer() {
                      <FooterLink link='/' label={'Home'} icon={''} />
                   </div>
                   <div className="box fit pd-05">
+                     <FooterLink link='/book-call' label={'Book A Call'} icon={''} />
+                  </div>
+                  <div className="box fit pd-05">
                      <FooterLink link='/our-work' label={'Our Work'} icon={''} />
                   </div>
                   <div className="box fit pd-05">
