@@ -8,11 +8,11 @@ import { ReactNode } from "react";
 
 
 function FooterLink (
-   { link, label, icon, instagram }:
-   { link: string, label: string, icon: ReactNode, instagram?: boolean }
+   { link, label, icon, instagram, noBlankTarget }:
+   { link: string, label: string, icon: ReactNode, instagram?: boolean, noBlankTarget?: boolean }
 ) {
    return (
-      <Link href={link} target="_blank" className={`footer-link-box ${instagram?"instagram":''}`}>
+      <Link href={link} target={noBlankTarget ? "_self" : "_blank"} className={`footer-link-box ${instagram?"instagram":''}`}>
          <div className="text-xxs dfb align-center gap-5">
             {icon} <span className={`footer-link${instagram?"-instagram":''}`}>{label}</span>
          </div>
@@ -64,19 +64,19 @@ export default function Footer() {
                <div className="footer-link-section">
                   <div className="text-s bold-600 full mb-1">Links</div>
                   <div className="box fit pd-05">
-                     <FooterLink link='/' label={'Home'} icon={''} />
+                     <FooterLink link='/' label={'Home'} icon={''} noBlankTarget />
                   </div>
                   <div className="box fit pd-05">
-                     <FooterLink link='/book-call' label={'Book A Call'} icon={''} />
+                     <FooterLink link='/book-call' label={'Book A Call'} icon={''} noBlankTarget />
                   </div>
                   <div className="box fit pd-05">
-                     <FooterLink link='/our-work' label={'Our Work'} icon={''} />
+                     <FooterLink link='/our-work' label={'Our Work'} icon={''} noBlankTarget />
                   </div>
                   <div className="box fit pd-05">
-                     <FooterLink link='/pricing' label={'Pricing'} icon={''} />
+                     <FooterLink link='/pricing' label={'Pricing'} icon={''} noBlankTarget />
                   </div>
                   <div className="box fit pd-05">
-                     <FooterLink link='/reviews' label={'Testimonials'} icon={''} />
+                     <FooterLink link='/reviews' label={'Testimonials'} icon={''} noBlankTarget />
                   </div>
                </div>
 
