@@ -5,6 +5,12 @@ import { motion } from "framer-motion"
 export default function OurWork () {
    const websites = [
       {
+         name: "Serenity Mental Health", 
+         link: "https://serenitymentalhealth.co.uk",
+         description: "Private Therapy Practice",
+         logo: "https://serenitymentalhealth.co.uk/favicon.ico"
+      },
+      {
          name: "The Loupe Collective", 
          link: "https://theloupecollective.com/",
          description: "Professional Website",

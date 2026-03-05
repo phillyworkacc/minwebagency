@@ -22,6 +22,11 @@ export default function Reviews () {
 			authorImage: 'https://minwebappcmgr.vercel.app/clientdefault.jpg',
 			authorWebsite: 'https://theloupecollective.com',
 			review: 'Philip has been amenable and exceptional from start to finish. His knowledge has been integral to me getting the best outcomes. A rising young star with amazing talent. Highly recommended. Thank you Philip for bringing my website and other tasks to life.'
+		},{
+			author: 'Shukura Fletcher',
+			authorImage: 'https://minwebappcmgr.vercel.app/clientdefault.jpg',
+			authorWebsite: 'https://serenitymentalhealth.co.uk',
+			review: "I had a really positive experience working with Philip on building my website. From the start, they were professional, patient, and genuinely attentive to what I was hoping to create. They listened carefully to my ideas and translated them into a site that feels clear, welcoming, and aligned with my work. Communication was smooth throughout, and any changes or questions were handled quickly and thoughtfully. I was especially impressed by their maturity, initiative, and attention to detail. I'm very grateful for their support and would confidently recommend them to anyone looking for reliable and skilled website help."
 		}
 	]
    
