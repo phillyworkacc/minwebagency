@@ -17,7 +17,7 @@ export default function Pricing () {
             <div className="box full dfb align-center justify-center">
                <Card styles={cardStyles}>
                   <div className="text-s bold-500 full mb-05">Contractor Package</div>
-                  <div className="text-xl bold-800 full">£200</div>
+                  <div className="text-xl bold-800 full">£150</div>
                   <div className="text-xxxs grey-5 full mb-15">per month</div>
                   <div className="text-xxs full dfb align-center gap-5 pd-1"><Check size={17} color="#1121ff" /> Professional Website</div>
                   <div className="text-xxs full dfb align-center gap-5 pd-1"><Check size={17} color="#1121ff" /> Missed Call Text Back</div>
