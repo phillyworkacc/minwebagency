@@ -1,6 +1,5 @@
 'use client'
 import ClientWebsite from "@/components/ClientWebsite/ClientWebsite"
-import { motion } from "framer-motion"
 
 export default function OurWork () {
    const websites = [
@@ -24,9 +23,9 @@ export default function OurWork () {
       },
       {
          name: "Qualys Services Ltd", 
-         link: "https://qualysservs.com/",
+         link: "https://qualysservices.co.uk/",
          description: "IT Services",
-         logo: "https://qualysservs.com/assets/img/logo.png"
+         logo: "https://qualysservices.co.uk/logo.png"
       },
       {
          name: "Ready To Grow Plants", 
