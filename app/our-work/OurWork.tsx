@@ -4,6 +4,12 @@ import ClientWebsite from "@/components/ClientWebsite/ClientWebsite"
 export default function OurWork () {
    const websites = [
       {
+         name: "Healing Young Hearts", 
+         link: "https://healingyounghearts.com",
+         description: "Trauma-Informed Practice & Systems Change",
+         logo: "https://healingyounghearts.com/assets/images/logo.png"
+      },
+      {
          name: "Serenity Mental Health", 
          link: "https://serenitymentalhealth.co.uk",
          description: "Private Therapy Practice",
